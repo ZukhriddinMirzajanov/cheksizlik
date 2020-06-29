@@ -1,0 +1,27 @@
+<mat-card>
+    <mat-grid-list cols="12" rowHeight="40px">
+        <mat-grid-tile colspan="2"> <button routerLink="/" class="btn"><i style="color:turquoise" class="fas fa-infinity"></i></button> </mat-grid-tile>
+        <mat-grid-tile colspan="8">
+            <div style="font-size: 15px;" class="input-group">
+                <input style="border-radius: 20px;" [(ngModel)]="searchData" type="text" class="form-control" placeholder="izlash uchun yozing...">
+
+            </div>
+        </mat-grid-tile>
+
+    </mat-grid-list>
+</mat-card>
+
+<br>
+<div class="container">
+    <div>
+        <div *ngFor="let title of titles | filter:searchData">
+            <mat-card (click)="onSelect(title)">
+                <h2>
+                    {{title.title}}
+                </h2>
+            </mat-card>
+            <br>
+
+        </div>
+    </div>
+</div>

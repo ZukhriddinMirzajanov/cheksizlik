@@ -1,0 +1,35 @@
+#btn {
+    background-color: turquoise;
+    color: white;
+    margin: 5px;
+}
+
+#text {
+    font-size: 30px;
+    color: rgb(36, 202, 214);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#searchInput {
+    border-radius: 10px;
+}
+
+#div {
+    text-align: center;
+}
+
+#logo {
+    font-family: monospace;
+    color: turquoise;
+    font-size: 30px;
+}
+
+#input {
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+#searchBtn {
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+}

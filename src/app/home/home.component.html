@@ -1,0 +1,53 @@
+<mat-card>
+    <mat-grid-list cols="10" rowHeight="40px">
+        <mat-grid-tile colspan="1">
+            <button mat-button [matMenuTriggerFor]="menu1"><mat-icon>menu</mat-icon></button>
+            <mat-menu #menu1="matMenu">
+                <button routerLink="/malumotlar" mat-menu-item>Izlash</button>
+                <button routerLink="/data" mat-menu-item>Ma'lumot qo'shish</button>
+            </mat-menu>
+        </mat-grid-tile>
+        <mat-grid-tile id="logo" colspan="8">Cheksizlik</mat-grid-tile>
+        <mat-grid-tile colspan="1"><button mat-icon-button [matMenuTriggerFor]="menu2" aria-label="Example icon-button with a menu">
+            <mat-icon>more_vert</mat-icon>
+          </button>
+            <mat-menu #menu2="matMenu">
+                <button mat-menu-item>
+              <mat-icon>dialpad</mat-icon>
+              <span>Redial</span>
+            </button>
+                <button mat-menu-item disabled>
+              <mat-icon>voicemail</mat-icon>
+              <span>Check voice mail</span>
+            </button>
+                <button mat-menu-item>
+              <mat-icon>notifications_off</mat-icon>
+              <span>Disable alerts</span>
+            </button>
+            </mat-menu>
+        </mat-grid-tile>
+
+    </mat-grid-list>
+</mat-card>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div id="div">
+    <div id="text">
+        <div>Assalomu Aleykum</div>
+        <br>
+        <div>Hush Kelibsiz</div>
+    </div>
+    <br>
+    <div>
+        <button id="btn" mat-raised-button routerLink="/malumotlar">Ma'lumot izlash</button>
+
+        <button id="btn" mat-raised-button routerLink="/data">Ma'lumot qo'shish</button>
+    </div>
+</div>

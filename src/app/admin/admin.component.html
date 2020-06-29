@@ -1,0 +1,39 @@
+<mat-card><button style="color: turquoise;" routerLink="/" class="btn">Orqaga</button> </mat-card>
+<br>
+<div class="container">
+    <mat-card>
+        <div style="text-align: center;">
+            <h1>Ma'lumot qo'shish</h1>
+            <small>Malumot qo'shib bizga yordam berayabganingizdan hursandmiz </small>
+            <small>Iltimos foydali shariatimizga tog'ri keladigan ma'lumot qo'shing</small>
+        </div>
+        <br>
+        <form [formGroup]="form">
+            <div class="example-form">
+                <mat-form-field class="example-full-width">
+                    <mat-label>Sarlavha</mat-label>
+                    <input [(ngModel)]="inputTitle" matInput formControlName="title" placeholder="Dasturlashni o'rganamiz">
+                    <mat-error *ngIf="title.hasError('required')">
+                        Iltimos <strong>sarlavhani</strong> to'ldiring
+                    </mat-error>
+                    <mat-error *ngIf="title.hasError('minlength')">
+                        Sarlavhada kamida <strong>5-ta</strong> harf bulishi kerak
+                    </mat-error>
+                </mat-form-field>
+            </div>
+
+            <br>
+            <mat-form-field class="example-full-width">
+                <mat-label>Ma'lumot</mat-label>
+                <textarea rows="10" [(ngModel)]="inputParagraf" matInput formControlName="paragraf" placeholder="Dasturlashni o'rganamiz"></textarea>
+                <mat-error *ngIf="paragraf.hasError('required')">
+                    Iltimos <strong>ma'lumot</strong> kirting
+                </mat-error>
+            </mat-form-field>
+
+        </form>
+        <br>
+        <button [disabled]="!inputTitle || !inputParagraf" style="color: turquoise;" (click)="createData()" mat-raised-button>Saqlash</button>
+    </mat-card>
+
+</div>
