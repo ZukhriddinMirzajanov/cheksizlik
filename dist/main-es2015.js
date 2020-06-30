@@ -267,7 +267,7 @@ __webpack_require__.r(__webpack_exports__);
 
 class AppComponent {
     constructor() {
-        this.title = 'frontend';
+        this.title = 'cheksizlik';
     }
 }
 AppComponent.ɵfac = function AppComponent_Factory(t) { return new (t || AppComponent)(); };
@@ -888,7 +888,7 @@ _angular_platform_browser__WEBPACK_IMPORTED_MODULE_3__["platformBrowser"]().boot
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Projects\cheksizlik\frontend\src\main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! C:\Projects\cheksizlik\frontend\cheksizlik\src\main.ts */"./src/main.ts");
 
 
 /***/ })

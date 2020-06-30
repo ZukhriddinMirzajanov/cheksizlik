@@ -553,7 +553,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     var AppComponent = function AppComponent() {
       _classCallCheck(this, AppComponent);
 
-      this.title = 'frontend';
+      this.title = 'cheksizlik';
     };
 
     AppComponent.ɵfac = function AppComponent_Factory(t) {
@@ -1745,7 +1745,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
   /***/
   function _(module, exports, __webpack_require__) {
     module.exports = __webpack_require__(
-    /*! C:\Projects\cheksizlik\frontend\src\main.ts */
+    /*! C:\Projects\cheksizlik\frontend\cheksizlik\src\main.ts */
     "./src/main.ts");
     /***/
   }
